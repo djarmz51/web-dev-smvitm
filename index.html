@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bio-data</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bio-data</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Personal Information</h1>
+            <p>Name: Muhammed Armaan</p>
+            
+            <p>Address: 123 Main St,convent road,bangalore</p>
+            <p>Email: 22cs097@gmail.com</p>
+            <p>Company: google</p>
+            <p>Age:  21</p>
+        </section>
+    </main><footer>
+        <p>&copy; web dev </p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const toggleButton = document.getElementById('dark-mode-toggle');
+                const body = document.body;
+        
+                toggleButton.addEventListener('click', function() {
+                    body.classList.toggle('dark-mode');
+                    body.classList.toggle('light-mode');
+                });
+        
+                // Initialize with light mode
+                body.classList.add('light-mode');
+            });
+        </script>
+        
+    
+    </footer>
+    
+</body>
+</html>
